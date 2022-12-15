@@ -24,17 +24,17 @@ These fields can be grouped as follows:
 
 ## Example 1
 
-The document with id `oai:bibliotekanauki.pl:441219` has this entites:
+The document with id `oai:bibliotekanauki.pl:441219` has these entites:
 
-* `author`: Arkadiusz Stempin
-* `topic`: socio
-* `headline`: The German model of integration policy
+* `author` Arkadiusz Stempin
+* `topic` socio
+* `headline` The German model of integration policy
 
 ## Example 2
 
-The document with Headline `Memórias da violência na América Latina: Araguaia – Campo Sagrado, Kamchatka e Linha de Passe` has this entites:
+The document with Headline `Memórias da violência na América Latina: Araguaia – Campo Sagrado, Kamchatka e Linha de Passe` has these entites:
 
-* `id`: oai:doaj.org/article:08e8a2c938404aebbaddbfcc02ab2954
-* `date published`: 1985
-* `headline`: The German model of integration policy
-* `doi`: 10.7179/psri_2014.23.05
+* `id` oai:doaj.org/article:08e8a2c938404aebbaddbfcc02ab2954
+* `date published` 1985
+* `headline` The German model of integration policy
+* `doi` 10.7179/psri_2014.23.05

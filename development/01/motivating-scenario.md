@@ -1,4 +1,4 @@
-# Motivating Scenario (Iteration 1)
+# Iteration 1: Motivating Scenario
 
 ## Name
 Basic document entites

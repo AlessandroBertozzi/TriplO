@@ -2,15 +2,13 @@
 
 ## Question 1 	
 
-What are the `basic entites` linked to `oai:doaj.org/article:24ebdf0d41ed477b8ddd7caf01585878` id ?
+What is the `publisher` linked to `oai:doaj.org/article:24ebdf0d41ed477b8ddd7caf01585878` id ?
 
 ### Outcome 
-A list of the `basic entites` linked to that `id`.
+A list of `publisher` linked to that `id`.
 
 ### Example 	
-* `Legal regulation of sport in Australia: challenges of combating violence`
-* `2013-12-01`
-* `S V Botnev`
+* `University of Catalogna`
 
 
 ## Question 2
@@ -28,10 +26,10 @@ A list of `ids` documents linked to that `author`.
 
 ## Question 3
 
-what are the `headlines` of the documents published in the `2018` ?
+what are the `title` of the documents published in the `2018` ?
 
 ### Outcome
-A list of `headlines` of the documents published in that `date`.
+A list of `title` of the documents published in that `date`.
 
 ### Example
 * `Education and gender: training social educators`

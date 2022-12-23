@@ -1,0 +1,96 @@
+@prefix triplo: <http://example.org/TiplO/> .
+
+<10670/1.2g3lm8> a triplo:Document ;
+    triplo:DatePublished "2020-06-01T00:00:00.000Z" ;
+    triplo:Doi "10670/1.2g3lm8" ;
+    triplo:Id "10670/1.2g3lm8" ;
+    triplo:hasAbstract <10670/1.2g3lm8_abstract> ;
+    triplo:hasAuthor <therese_courau_zOnUS5I85LEZ--K1gFOCb> ;
+    triplo:hasContributor <Centre_d'études_ibériques_et_ibéro-américaines_-_cultures_romanes_et_amérindiennes_(CEIIBA)_;_Université_Toulouse_-_Jean_Jaurès_(UT2J)> ;
+    triplo:hasLanguage <fr> ;
+    triplo:hasPublisher <HAL_CCSD> ;
+    triplo:hasTitle <10670/1.2g3lm8_headline> ;
+    triplo:hasTopic <genre> .
+
+<10670/1.gpfz8b> a triplo:Document ;
+    triplo:DatePublished "2021-03-17T00:00:00.000Z" ;
+    triplo:Doi "10670/1.gpfz8b" ;
+    triplo:Id "10670/1.gpfz8b" ;
+    triplo:hasAbstract <10670/1.gpfz8b_abstract> ;
+    triplo:hasAuthor <irma_velez_xyk_6Lp1jJa0ubL6z2mdb> ;
+    triplo:hasContributor <Centre_d'études_ibériques_et_ibéro-américaines_-_cultures_romanes_et_amérindiennes_(CEIIBA)_;_Université_Toulouse_-_Jean_Jaurès_(UT2J)> ;
+    triplo:hasLanguage <fr> ;
+    triplo:hasPublisher <HAL_CCSD> ;
+    triplo:hasTitle <10670/1.gpfz8b_headline> ;
+    triplo:hasTopic <hist> .
+
+<10670/1.ja67mn> a triplo:Document ;
+    triplo:DatePublished "2020-01-01T00:00:00.000Z" ;
+    triplo:Doi "10670/1.ja67mn" ;
+    triplo:Id "10670/1.ja67mn" ;
+    triplo:hasAbstract <10670/1.ja67mn_abstract> ;
+    triplo:hasAuthor <leidy_jaimes_gomez_RPgj3MNLxwgYBTVOhn7JN> ;
+    triplo:hasContributor <Universidad_de_Investigación_y_Desarrollo_(UDI)> ;
+    triplo:hasLanguage <es> ;
+    triplo:hasPublisher <HAL_CCSD> ;
+    triplo:hasTitle <10670/1.ja67mn_headline> ;
+    triplo:hasTopic <droit> .
+
+<http://hdl.handle.net/10251/123963> a triplo:Document ;
+    triplo:DatePublished "2019-07-22T00:00:00.000Z" ;
+    triplo:Doi "" ;
+    triplo:Id "http://hdl.handle.net/10251/123963" ;
+    triplo:hasAbstract <http://hdl.handle.net/10251/123963_abstract> ;
+    triplo:hasAuthor <gema_garcia_garcia_lzSdtr5jWbd8i0S0SFj-u> ;
+    triplo:hasContributor <Guillén_Ramón__José_Manuel> ;
+    triplo:hasLanguage <ca> ;
+    triplo:hasPublisher <Universitat_Politècnica_de_València> ;
+    triplo:hasTitle <http://hdl.handle.net/10251/123963_headline> ;
+    triplo:hasTopic <droit> .
+
+<10670/1.2g3lm8_abstract> a triplo:Abstract .
+
+<10670/1.2g3lm8_headline> a triplo:Title .
+
+<10670/1.gpfz8b_abstract> a triplo:Abstract .
+
+<10670/1.gpfz8b_headline> a triplo:Title .
+
+<10670/1.ja67mn_abstract> a triplo:Abstract .
+
+<10670/1.ja67mn_headline> a triplo:Title .
+
+<Guillén_Ramón__José_Manuel> a triplo:Contributor .
+
+<Universidad_de_Investigación_y_Desarrollo_(UDI)> a triplo:Contributor .
+
+<Universitat_Politècnica_de_València> a triplo:Publisher .
+
+<ca> a triplo:Language .
+
+<es> a triplo:Language .
+
+<gema_garcia_garcia_lzSdtr5jWbd8i0S0SFj-u> a triplo:Author .
+
+<genre> a triplo:Topic .
+
+<hist> a triplo:Topic .
+
+<http://hdl.handle.net/10251/123963_abstract> a triplo:Abstract .
+
+<http://hdl.handle.net/10251/123963_headline> a triplo:Title .
+
+<irma_velez_xyk_6Lp1jJa0ubL6z2mdb> a triplo:Author .
+
+<leidy_jaimes_gomez_RPgj3MNLxwgYBTVOhn7JN> a triplo:Author .
+
+<therese_courau_zOnUS5I85LEZ--K1gFOCb> a triplo:Author .
+
+<Centre_d'études_ibériques_et_ibéro-américaines_-_cultures_romanes_et_amérindiennes_(CEIIBA)_;_Université_Toulouse_-_Jean_Jaurès_(UT2J)> a triplo:Contributor .
+
+<droit> a triplo:Topic .
+
+<fr> a triplo:Language .
+
+<HAL_CCSD> a triplo:Publisher .
+

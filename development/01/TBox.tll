@@ -1,0 +1,144 @@
+@prefix : <https://w3id.org/alessandro/ontology/TriplO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/alessandro/ontology/TriplO> .
+
+<https://w3id.org/alessandro/ontology/TriplO> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasAbstract
+:hasAbstract rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasContributor
+:hasContributor rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasLanguage
+:hasLanguage rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasPublisher
+:hasPublisher rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasTitle
+:hasTitle rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#hasTopic
+:hasTopic rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/alessandro/ontology/TriplO#Doi
+:Doi rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:string .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Id
+:Id rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#PublishingDate
+:PublishingDate rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/alessandro/ontology/TriplO#Abstract
+:Abstract rdf:type owl:Class .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Author
+:Author rdf:type owl:Class .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Contributor
+:Contributor rdf:type owl:Class .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Document
+:Document rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAuthor ;
+                            owl:someValuesFrom :Author
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasContributor ;
+                            owl:someValuesFrom :Contributor
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPublisher ;
+                            owl:someValuesFrom :Publisher
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTopic ;
+                            owl:someValuesFrom :Topic
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasLanguage ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Language
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTitle ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Title
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAbstract ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Abstract
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :Doi ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :Id ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :PublishingDate ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:dateTime
+                          ] .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Language
+:Language rdf:type owl:Class .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Publisher
+:Publisher rdf:type owl:Class .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Title
+:Title rdf:type owl:Class .
+
+
+###  https://w3id.org/alessandro/ontology/TriplO#Topic
+:Topic rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
